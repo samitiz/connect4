@@ -7,6 +7,7 @@ Date : 10-16-2020
 #include <iomanip>
 using namespace std;
 
+//creating a enum
 enum p_turn { player1 = 1 , player2 = 2 };
 int ibf = 0;
 class game {
@@ -29,6 +30,7 @@ public:
 		turn = player2;
 
 	}
+	//displaying the board
 	void show_board()
 	{
 		cout << "\n \t\t\t   Connect 4 Game \n\n" << endl;
@@ -52,6 +54,7 @@ public:
 		}
 		cout << " \t\t------------------------------------\n";
 	}
+	//for Switching the turns
 	void switch_turn()
 	{
 		if (turn == player1)
@@ -60,6 +63,7 @@ public:
 		turn = player1;
 		
 	}
+	//Wining Logic
 	bool is_won()
 	{
 		for (int i = 0; i < size; i++) {
@@ -127,6 +131,7 @@ public:
 		}
 		return false;
 	}
+	//If the match is draw
 	bool is_board_full()
 	{
 	
@@ -138,6 +143,8 @@ public:
 		else
 			return true;
 	}
+	
+	//Runner function
 	void start()
 	{
 		show_board();
@@ -213,6 +220,7 @@ public:
 		}
 	}
 };
+
 int main()
 {
 	
