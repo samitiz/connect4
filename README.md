@@ -1,1 +1,1 @@
-# Two player console base game createdin c++ (OOP)
+# Two player console base game created in c++ (OOP)
